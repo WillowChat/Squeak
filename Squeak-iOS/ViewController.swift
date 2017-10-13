@@ -1,27 +1,21 @@
-//
-//  ViewController.swift
-//  Squeak-iOS
-//
-//  Created by Sky Welch on 12/10/2017.
-//
-
 import UIKit
-import Squeak_Core
+import RxSwift
+import Squeak_Core_iOS
 
 class ViewController: UIViewController {
     
-    let testSharedStuff = TestSharedStuff.sharedThing
+    private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        TestingSharedStuff.stuff
+            .debug()
+            .subscribe(onNext: { number in
+                print("\(number)")
+            })
+            .disposed(by: disposeBag)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 

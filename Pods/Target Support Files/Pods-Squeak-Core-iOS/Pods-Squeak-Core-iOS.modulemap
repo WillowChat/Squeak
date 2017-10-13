@@ -1,0 +1,6 @@
+framework module Pods_Squeak_Core_iOS {
+  umbrella header "Pods-Squeak-Core-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

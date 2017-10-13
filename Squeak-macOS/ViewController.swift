@@ -1,21 +1,20 @@
-//
-//  ViewController.swift
-//  Squeak-macOS
-//
-//  Created by Sky Welch on 12/10/2017.
-//
-
 import Cocoa
-import Squeak_Core
+import RxSwift
+import Squeak_Core_macOS
 
 class ViewController: NSViewController {
     
-    let testSharedStuff = TestSharedStuff.sharedThing
-
+    private let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        TestingSharedStuff.stuff
+            .debug()
+            .subscribe(onNext: { number in
+                print("\(number)")
+            })
+            .disposed(by: disposeBag)
     }
 
     override var representedObject: Any? {
@@ -23,7 +22,6 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-
 
 }
 

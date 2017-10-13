@@ -1,0 +1,6 @@
+framework module Pods_Squeak_iOSTests {
+  umbrella header "Pods-Squeak-iOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

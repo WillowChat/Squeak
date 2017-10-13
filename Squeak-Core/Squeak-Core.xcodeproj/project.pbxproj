@@ -1,0 +1,977 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		335AE2E51F90EE8100AE3C05 /* TestingSharedStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335AE2E41F90EE8100AE3C05 /* TestingSharedStuff.swift */; };
+		335AE2E61F90EE8100AE3C05 /* TestingSharedStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335AE2E41F90EE8100AE3C05 /* TestingSharedStuff.swift */; };
+		335AE2E71F90EE8100AE3C05 /* TestingSharedStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335AE2E41F90EE8100AE3C05 /* TestingSharedStuff.swift */; };
+		335AE2E81F90EE8100AE3C05 /* TestingSharedStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335AE2E41F90EE8100AE3C05 /* TestingSharedStuff.swift */; };
+		335AE2EA1F90EEB400AE3C05 /* TestingSharedStuffTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335AE2E91F90EEB400AE3C05 /* TestingSharedStuffTests.swift */; };
+		335AE2EB1F90EEB400AE3C05 /* TestingSharedStuffTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335AE2E91F90EEB400AE3C05 /* TestingSharedStuffTests.swift */; };
+		33CD41581F90ED9000EF00B4 /* Squeak_Core_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33CD414F1F90ED9000EF00B4 /* Squeak_Core_iOS.framework */; };
+		33CD415D1F90ED9000EF00B4 /* Squeak_Core_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CD415C1F90ED9000EF00B4 /* Squeak_Core_iOSTests.swift */; };
+		33CD415F1F90ED9000EF00B4 /* Squeak_Core_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 33CD41511F90ED9000EF00B4 /* Squeak_Core_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33CD41741F90EDA700EF00B4 /* Squeak_Core_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33CD416B1F90EDA700EF00B4 /* Squeak_Core_macOS.framework */; };
+		33CD41791F90EDA700EF00B4 /* Squeak_Core_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CD41781F90EDA700EF00B4 /* Squeak_Core_macOSTests.swift */; };
+		33CD417B1F90EDA700EF00B4 /* Squeak_Core_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 33CD416D1F90EDA700EF00B4 /* Squeak_Core_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AA1821EBB66FA371609572D /* Pods_Squeak_Core_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AB0DB151B72E0C72628916 /* Pods_Squeak_Core_iOSTests.framework */; };
+		C787F8EBD005792AAA5BE99D /* Pods_Squeak_Core_macOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EED6BF2667862228535202A1 /* Pods_Squeak_Core_macOSTests.framework */; };
+		E639FBE61D3377A12C4B5680 /* Pods_Squeak_Core_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C296D99D8750818FE8F5AC /* Pods_Squeak_Core_iOS.framework */; };
+		FBFE39EF5E0430004BB9DB69 /* Pods_Squeak_Core_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAD96E3046717B52065CA8D /* Pods_Squeak_Core_macOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33CD41591F90ED9000EF00B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33CD41271F90ED2200EF00B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33CD414E1F90ED9000EF00B4;
+			remoteInfo = "Squeak-Core-iOS";
+		};
+		33CD41751F90EDA700EF00B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33CD41271F90ED2200EF00B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33CD416A1F90EDA700EF00B4;
+			remoteInfo = "Squeak-Core-macOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		023565589D78345F110E7734 /* Pods_Squeak_Squeak_Core_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Squeak_Squeak_Core_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06AB0DB151B72E0C72628916 /* Pods_Squeak_Core_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Squeak_Core_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BC30A6E3A03AD6FEABB9CB4 /* Pods-Squeak-Squeak-Core-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squeak-Squeak-Core-macOS.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Squeak-Squeak-Core-macOS/Pods-Squeak-Squeak-Core-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		2B2D1462FA7263BAF2DDFC58 /* Pods-Squeak-Core-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squeak-Core-macOS.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Squeak-Core-macOS/Pods-Squeak-Core-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		335AE2E41F90EE8100AE3C05 /* TestingSharedStuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingSharedStuff.swift; sourceTree = "<group>"; };
+		335AE2E91F90EEB400AE3C05 /* TestingSharedStuffTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingSharedStuffTests.swift; sourceTree = "<group>"; };
+		33CD414F1F90ED9000EF00B4 /* Squeak_Core_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Squeak_Core_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33CD41511F90ED9000EF00B4 /* Squeak_Core_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Squeak_Core_iOS.h; sourceTree = "<group>"; };
+		33CD41521F90ED9000EF00B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33CD41571F90ED9000EF00B4 /* Squeak-Core-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Squeak-Core-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33CD415C1F90ED9000EF00B4 /* Squeak_Core_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Squeak_Core_iOSTests.swift; sourceTree = "<group>"; };
+		33CD415E1F90ED9000EF00B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33CD416B1F90EDA700EF00B4 /* Squeak_Core_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Squeak_Core_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33CD416D1F90EDA700EF00B4 /* Squeak_Core_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Squeak_Core_macOS.h; sourceTree = "<group>"; };
+		33CD416E1F90EDA700EF00B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33CD41731F90EDA700EF00B4 /* Squeak-Core-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Squeak-Core-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33CD41781F90EDA700EF00B4 /* Squeak_Core_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Squeak_Core_macOSTests.swift; sourceTree = "<group>"; };
+		33CD417A1F90EDA700EF00B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38928DC86BD07B7F46332078 /* Pods-Squeak-Core-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squeak-Core-iOS.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Squeak-Core-iOS/Pods-Squeak-Core-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		498B586F5385609CF9974ABF /* Pods-Squeak-Squeak-Core-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squeak-Squeak-Core-iOS.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Squeak-Squeak-Core-iOS/Pods-Squeak-Squeak-Core-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		4CAD96E3046717B52065CA8D /* Pods_Squeak_Core_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Squeak_Core_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53C296D99D8750818FE8F5AC /* Pods_Squeak_Core_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Squeak_Core_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		542AB2ED6AF5E6EAC2A2EB9A /* Pods-Squeak-Core-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squeak-Core-macOS.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Squeak-Core-macOS/Pods-Squeak-Core-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		8ED8B80C0C5342426B96C275 /* Pods_Squeak_Squeak_Core_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Squeak_Squeak_Core_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92CEB1BB2B4F15A753C23523 /* Pods-Squeak-Core-macOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squeak-Core-macOSTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Squeak-Core-macOSTests/Pods-Squeak-Core-macOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D753AAC2AFFFAD9A4A236CD /* Pods-Squeak-Core-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squeak-Core-iOSTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Squeak-Core-iOSTests/Pods-Squeak-Core-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		D635BA985F5404DF963E15BB /* Pods-Squeak-Core-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squeak-Core-iOSTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Squeak-Core-iOSTests/Pods-Squeak-Core-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DF140D1F022B09916EB15B36 /* Pods-Squeak-Squeak-Core-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squeak-Squeak-Core-macOS.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Squeak-Squeak-Core-macOS/Pods-Squeak-Squeak-Core-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		E1538D99F1713E36FA013F85 /* Pods-Squeak-Core-macOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squeak-Core-macOSTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Squeak-Core-macOSTests/Pods-Squeak-Core-macOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		EED6BF2667862228535202A1 /* Pods_Squeak_Core_macOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Squeak_Core_macOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F72B8A7F5D4F9AD0FF31F3D2 /* Pods-Squeak-Core-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squeak-Core-iOS.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Squeak-Core-iOS/Pods-Squeak-Core-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		FB958F4C9947092AA313B1B6 /* Pods-Squeak-Squeak-Core-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squeak-Squeak-Core-iOS.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Squeak-Squeak-Core-iOS/Pods-Squeak-Squeak-Core-iOS.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33CD414B1F90ED9000EF00B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E639FBE61D3377A12C4B5680 /* Pods_Squeak_Core_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33CD41541F90ED9000EF00B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33CD41581F90ED9000EF00B4 /* Squeak_Core_iOS.framework in Frameworks */,
+				9AA1821EBB66FA371609572D /* Pods_Squeak_Core_iOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33CD41671F90EDA700EF00B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBFE39EF5E0430004BB9DB69 /* Pods_Squeak_Core_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33CD41701F90EDA700EF00B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33CD41741F90EDA700EF00B4 /* Squeak_Core_macOS.framework in Frameworks */,
+				C787F8EBD005792AAA5BE99D /* Pods_Squeak_Core_macOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		335AE2E21F90EE5E00AE3C05 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				335AE2E41F90EE8100AE3C05 /* TestingSharedStuff.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		335AE2E31F90EE6A00AE3C05 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				335AE2E91F90EEB400AE3C05 /* TestingSharedStuffTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		33CD41261F90ED2200EF00B4 = {
+			isa = PBXGroup;
+			children = (
+				33CD41501F90ED9000EF00B4 /* Squeak-Core-iOS */,
+				33CD415B1F90ED9000EF00B4 /* Squeak-Core-iOSTests */,
+				33CD416C1F90EDA700EF00B4 /* Squeak-Core-macOS */,
+				33CD41771F90EDA700EF00B4 /* Squeak-Core-macOSTests */,
+				335AE2E21F90EE5E00AE3C05 /* Sources */,
+				335AE2E31F90EE6A00AE3C05 /* Tests */,
+				33CD41311F90ED2200EF00B4 /* Products */,
+				B9A9A257B4AF82C7A91D2F9E /* Pods */,
+				F2C937D39783D7E8E9CC5BED /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		33CD41311F90ED2200EF00B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33CD414F1F90ED9000EF00B4 /* Squeak_Core_iOS.framework */,
+				33CD41571F90ED9000EF00B4 /* Squeak-Core-iOSTests.xctest */,
+				33CD416B1F90EDA700EF00B4 /* Squeak_Core_macOS.framework */,
+				33CD41731F90EDA700EF00B4 /* Squeak-Core-macOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33CD41501F90ED9000EF00B4 /* Squeak-Core-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				33CD41511F90ED9000EF00B4 /* Squeak_Core_iOS.h */,
+				33CD41521F90ED9000EF00B4 /* Info.plist */,
+			);
+			path = "Squeak-Core-iOS";
+			sourceTree = "<group>";
+		};
+		33CD415B1F90ED9000EF00B4 /* Squeak-Core-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				33CD415C1F90ED9000EF00B4 /* Squeak_Core_iOSTests.swift */,
+				33CD415E1F90ED9000EF00B4 /* Info.plist */,
+			);
+			path = "Squeak-Core-iOSTests";
+			sourceTree = "<group>";
+		};
+		33CD416C1F90EDA700EF00B4 /* Squeak-Core-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				33CD416D1F90EDA700EF00B4 /* Squeak_Core_macOS.h */,
+				33CD416E1F90EDA700EF00B4 /* Info.plist */,
+			);
+			path = "Squeak-Core-macOS";
+			sourceTree = "<group>";
+		};
+		33CD41771F90EDA700EF00B4 /* Squeak-Core-macOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				33CD41781F90EDA700EF00B4 /* Squeak_Core_macOSTests.swift */,
+				33CD417A1F90EDA700EF00B4 /* Info.plist */,
+			);
+			path = "Squeak-Core-macOSTests";
+			sourceTree = "<group>";
+		};
+		B9A9A257B4AF82C7A91D2F9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F72B8A7F5D4F9AD0FF31F3D2 /* Pods-Squeak-Core-iOS.debug.xcconfig */,
+				38928DC86BD07B7F46332078 /* Pods-Squeak-Core-iOS.release.xcconfig */,
+				542AB2ED6AF5E6EAC2A2EB9A /* Pods-Squeak-Core-macOS.debug.xcconfig */,
+				2B2D1462FA7263BAF2DDFC58 /* Pods-Squeak-Core-macOS.release.xcconfig */,
+				498B586F5385609CF9974ABF /* Pods-Squeak-Squeak-Core-iOS.debug.xcconfig */,
+				FB958F4C9947092AA313B1B6 /* Pods-Squeak-Squeak-Core-iOS.release.xcconfig */,
+				1BC30A6E3A03AD6FEABB9CB4 /* Pods-Squeak-Squeak-Core-macOS.debug.xcconfig */,
+				DF140D1F022B09916EB15B36 /* Pods-Squeak-Squeak-Core-macOS.release.xcconfig */,
+				D635BA985F5404DF963E15BB /* Pods-Squeak-Core-iOSTests.debug.xcconfig */,
+				9D753AAC2AFFFAD9A4A236CD /* Pods-Squeak-Core-iOSTests.release.xcconfig */,
+				92CEB1BB2B4F15A753C23523 /* Pods-Squeak-Core-macOSTests.debug.xcconfig */,
+				E1538D99F1713E36FA013F85 /* Pods-Squeak-Core-macOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F2C937D39783D7E8E9CC5BED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53C296D99D8750818FE8F5AC /* Pods_Squeak_Core_iOS.framework */,
+				4CAD96E3046717B52065CA8D /* Pods_Squeak_Core_macOS.framework */,
+				023565589D78345F110E7734 /* Pods_Squeak_Squeak_Core_iOS.framework */,
+				8ED8B80C0C5342426B96C275 /* Pods_Squeak_Squeak_Core_macOS.framework */,
+				06AB0DB151B72E0C72628916 /* Pods_Squeak_Core_iOSTests.framework */,
+				EED6BF2667862228535202A1 /* Pods_Squeak_Core_macOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		33CD414C1F90ED9000EF00B4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33CD415F1F90ED9000EF00B4 /* Squeak_Core_iOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33CD41681F90EDA700EF00B4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33CD417B1F90EDA700EF00B4 /* Squeak_Core_macOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		33CD414E1F90ED9000EF00B4 /* Squeak-Core-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33CD41601F90ED9000EF00B4 /* Build configuration list for PBXNativeTarget "Squeak-Core-iOS" */;
+			buildPhases = (
+				3D553D07E36D8635C96DB632 /* [CP] Check Pods Manifest.lock */,
+				33CD414A1F90ED9000EF00B4 /* Sources */,
+				33CD414B1F90ED9000EF00B4 /* Frameworks */,
+				33CD414C1F90ED9000EF00B4 /* Headers */,
+				33CD414D1F90ED9000EF00B4 /* Resources */,
+				A08BB138E0E2C55EA35F860D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Squeak-Core-iOS";
+			productName = "Squeak-Core-iOS";
+			productReference = 33CD414F1F90ED9000EF00B4 /* Squeak_Core_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		33CD41561F90ED9000EF00B4 /* Squeak-Core-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33CD41631F90ED9000EF00B4 /* Build configuration list for PBXNativeTarget "Squeak-Core-iOSTests" */;
+			buildPhases = (
+				0DF9933FD1A53D9FE3A732B1 /* [CP] Check Pods Manifest.lock */,
+				33CD41531F90ED9000EF00B4 /* Sources */,
+				33CD41541F90ED9000EF00B4 /* Frameworks */,
+				33CD41551F90ED9000EF00B4 /* Resources */,
+				5FBDBCEB39442635A16A3150 /* [CP] Embed Pods Frameworks */,
+				3182E2F0952A76B5E550FB90 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33CD415A1F90ED9000EF00B4 /* PBXTargetDependency */,
+			);
+			name = "Squeak-Core-iOSTests";
+			productName = "Squeak-Core-iOSTests";
+			productReference = 33CD41571F90ED9000EF00B4 /* Squeak-Core-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		33CD416A1F90EDA700EF00B4 /* Squeak-Core-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33CD417C1F90EDA700EF00B4 /* Build configuration list for PBXNativeTarget "Squeak-Core-macOS" */;
+			buildPhases = (
+				C096C692BF525C6484B4DBB0 /* [CP] Check Pods Manifest.lock */,
+				33CD41661F90EDA700EF00B4 /* Sources */,
+				33CD41671F90EDA700EF00B4 /* Frameworks */,
+				33CD41681F90EDA700EF00B4 /* Headers */,
+				33CD41691F90EDA700EF00B4 /* Resources */,
+				61D75D870D76482056359A6D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Squeak-Core-macOS";
+			productName = "Squeak-Core-macOS";
+			productReference = 33CD416B1F90EDA700EF00B4 /* Squeak_Core_macOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		33CD41721F90EDA700EF00B4 /* Squeak-Core-macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33CD417F1F90EDA700EF00B4 /* Build configuration list for PBXNativeTarget "Squeak-Core-macOSTests" */;
+			buildPhases = (
+				B0BD4582EE8D4596F520539B /* [CP] Check Pods Manifest.lock */,
+				33CD416F1F90EDA700EF00B4 /* Sources */,
+				33CD41701F90EDA700EF00B4 /* Frameworks */,
+				33CD41711F90EDA700EF00B4 /* Resources */,
+				59DA4A27FAE7106DC8DA734A /* [CP] Embed Pods Frameworks */,
+				493F787558B6E31F206DF424 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33CD41761F90EDA700EF00B4 /* PBXTargetDependency */,
+			);
+			name = "Squeak-Core-macOSTests";
+			productName = "Squeak-Core-macOSTests";
+			productReference = 33CD41731F90EDA700EF00B4 /* Squeak-Core-macOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33CD41271F90ED2200EF00B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Willow Chat";
+				TargetAttributes = {
+					33CD414E1F90ED9000EF00B4 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					33CD41561F90ED9000EF00B4 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					33CD416A1F90EDA700EF00B4 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					33CD41721F90EDA700EF00B4 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 33CD412A1F90ED2200EF00B4 /* Build configuration list for PBXProject "Squeak-Core" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 33CD41261F90ED2200EF00B4;
+			productRefGroup = 33CD41311F90ED2200EF00B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33CD414E1F90ED9000EF00B4 /* Squeak-Core-iOS */,
+				33CD41561F90ED9000EF00B4 /* Squeak-Core-iOSTests */,
+				33CD416A1F90EDA700EF00B4 /* Squeak-Core-macOS */,
+				33CD41721F90EDA700EF00B4 /* Squeak-Core-macOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33CD414D1F90ED9000EF00B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33CD41551F90ED9000EF00B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33CD41691F90EDA700EF00B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33CD41711F90EDA700EF00B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DF9933FD1A53D9FE3A732B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Squeak-Core-iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3182E2F0952A76B5E550FB90 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Squeak-Core-iOSTests/Pods-Squeak-Core-iOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D553D07E36D8635C96DB632 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Squeak-Core-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		493F787558B6E31F206DF424 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Squeak-Core-macOSTests/Pods-Squeak-Core-macOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59DA4A27FAE7106DC8DA734A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-Squeak-Core-macOSTests/Pods-Squeak-Core-macOSTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa-macOS/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift-macOS/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Squeak-Core-macOSTests/Pods-Squeak-Core-macOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FBDBCEB39442635A16A3150 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-Squeak-Core-iOSTests/Pods-Squeak-Core-iOSTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa-iOS/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift-iOS/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Squeak-Core-iOSTests/Pods-Squeak-Core-iOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61D75D870D76482056359A6D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Squeak-Core-macOS/Pods-Squeak-Core-macOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A08BB138E0E2C55EA35F860D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Squeak-Core-iOS/Pods-Squeak-Core-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0BD4582EE8D4596F520539B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Squeak-Core-macOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C096C692BF525C6484B4DBB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Squeak-Core-macOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33CD414A1F90ED9000EF00B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335AE2E51F90EE8100AE3C05 /* TestingSharedStuff.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33CD41531F90ED9000EF00B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335AE2E61F90EE8100AE3C05 /* TestingSharedStuff.swift in Sources */,
+				33CD415D1F90ED9000EF00B4 /* Squeak_Core_iOSTests.swift in Sources */,
+				335AE2EA1F90EEB400AE3C05 /* TestingSharedStuffTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33CD41661F90EDA700EF00B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335AE2E71F90EE8100AE3C05 /* TestingSharedStuff.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33CD416F1F90EDA700EF00B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335AE2E81F90EE8100AE3C05 /* TestingSharedStuff.swift in Sources */,
+				33CD41791F90EDA700EF00B4 /* Squeak_Core_macOSTests.swift in Sources */,
+				335AE2EB1F90EEB400AE3C05 /* TestingSharedStuffTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33CD415A1F90ED9000EF00B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33CD414E1F90ED9000EF00B4 /* Squeak-Core-iOS */;
+			targetProxy = 33CD41591F90ED9000EF00B4 /* PBXContainerItemProxy */;
+		};
+		33CD41761F90EDA700EF00B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33CD416A1F90EDA700EF00B4 /* Squeak-Core-macOS */;
+			targetProxy = 33CD41751F90EDA700EF00B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		33CD41421F90ED2200EF00B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		33CD41431F90ED2200EF00B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		33CD41611F90ED9000EF00B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F72B8A7F5D4F9AD0FF31F3D2 /* Pods-Squeak-Core-iOS.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L3WEU56M5K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Squeak-Core-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "chat.willow.squeak.Squeak-Core-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		33CD41621F90ED9000EF00B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38928DC86BD07B7F46332078 /* Pods-Squeak-Core-iOS.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L3WEU56M5K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Squeak-Core-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "chat.willow.squeak.Squeak-Core-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		33CD41641F90ED9000EF00B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D635BA985F5404DF963E15BB /* Pods-Squeak-Core-iOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3WEU56M5K;
+				INFOPLIST_FILE = "Squeak-Core-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "chat.willow.squeak.Squeak-Core-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		33CD41651F90ED9000EF00B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D753AAC2AFFFAD9A4A236CD /* Pods-Squeak-Core-iOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3WEU56M5K;
+				INFOPLIST_FILE = "Squeak-Core-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "chat.willow.squeak.Squeak-Core-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		33CD417D1F90EDA700EF00B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 542AB2ED6AF5E6EAC2A2EB9A /* Pods-Squeak-Core-macOS.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L3WEU56M5K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Squeak-Core-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "chat.willow.squeak.Squeak-Core-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		33CD417E1F90EDA700EF00B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B2D1462FA7263BAF2DDFC58 /* Pods-Squeak-Core-macOS.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L3WEU56M5K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Squeak-Core-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "chat.willow.squeak.Squeak-Core-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		33CD41801F90EDA700EF00B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92CEB1BB2B4F15A753C23523 /* Pods-Squeak-Core-macOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = L3WEU56M5K;
+				INFOPLIST_FILE = "Squeak-Core-macOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "chat.willow.squeak.Squeak-Core-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		33CD41811F90EDA700EF00B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1538D99F1713E36FA013F85 /* Pods-Squeak-Core-macOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = L3WEU56M5K;
+				INFOPLIST_FILE = "Squeak-Core-macOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "chat.willow.squeak.Squeak-Core-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33CD412A1F90ED2200EF00B4 /* Build configuration list for PBXProject "Squeak-Core" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33CD41421F90ED2200EF00B4 /* Debug */,
+				33CD41431F90ED2200EF00B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33CD41601F90ED9000EF00B4 /* Build configuration list for PBXNativeTarget "Squeak-Core-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33CD41611F90ED9000EF00B4 /* Debug */,
+				33CD41621F90ED9000EF00B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33CD41631F90ED9000EF00B4 /* Build configuration list for PBXNativeTarget "Squeak-Core-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33CD41641F90ED9000EF00B4 /* Debug */,
+				33CD41651F90ED9000EF00B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33CD417C1F90EDA700EF00B4 /* Build configuration list for PBXNativeTarget "Squeak-Core-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33CD417D1F90EDA700EF00B4 /* Debug */,
+				33CD417E1F90EDA700EF00B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33CD417F1F90EDA700EF00B4 /* Build configuration list for PBXNativeTarget "Squeak-Core-macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33CD41801F90EDA700EF00B4 /* Debug */,
+				33CD41811F90EDA700EF00B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33CD41271F90ED2200EF00B4 /* Project object */;
+}

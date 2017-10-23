@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  Squeak-iOS
-//
-//  Created by Sky Welch on 12/10/2017.
-//
-
 import UIKit
 
 @UIApplicationMain
@@ -12,9 +5,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let welcomeViewController = WelcomeViewController()
+        let navigationController = UINavigationController(rootViewController: welcomeViewController)
+        
+        window?.rootViewController = navigationController
+        
         return true
     }
 

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		332332591F9E74000028A4DF /* Nibbler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332332581F9E74000028A4DF /* Nibbler.swift */; };
+		336AABDB1F969EA5003D0FFC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336AABD91F969EA5003D0FFC /* WelcomeViewController.swift */; };
+		336AABDC1F969EA5003D0FFC /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 336AABDA1F969EA5003D0FFC /* WelcomeViewController.xib */; };
+		336AABDF1F9CBCA7003D0FFC /* AddCoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336AABDD1F9CBCA7003D0FFC /* AddCoreViewController.swift */; };
+		336AABE01F9CBCA7003D0FFC /* AddCoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 336AABDE1F9CBCA7003D0FFC /* AddCoreViewController.xib */; };
+		336AABE41F9E6B4D003D0FFC /* TextInputControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 336AABE31F9E6B4D003D0FFC /* TextInputControl.xib */; };
+		336AABE61F9E6B59003D0FFC /* TextInputControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336AABE51F9E6B59003D0FFC /* TextInputControl.swift */; };
 		3398BA081F90FA8700428167 /* Squeak_Core_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3398BA071F90FA8700428167 /* Squeak_Core_iOS.framework */; };
 		3398BA091F90FA8700428167 /* Squeak_Core_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3398BA071F90FA8700428167 /* Squeak_Core_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3398BA0C1F90FA8C00428167 /* Squeak_Core_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3398BA0B1F90FA8C00428167 /* Squeak_Core_macOS.framework */; };
@@ -88,6 +95,13 @@
 /* Begin PBXFileReference section */
 		04CE1367F11B652F5B0766C5 /* Pods-Squeak-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squeak-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Squeak-macOS/Pods-Squeak-macOS.debug.xcconfig"; sourceTree = "<group>"; };
 		1055A7EBBEDBE2DA6F4E6742 /* Pods_Squeak_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Squeak_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		332332581F9E74000028A4DF /* Nibbler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nibbler.swift; sourceTree = "<group>"; };
+		336AABD91F969EA5003D0FFC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		336AABDA1F969EA5003D0FFC /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
+		336AABDD1F9CBCA7003D0FFC /* AddCoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoreViewController.swift; sourceTree = "<group>"; };
+		336AABDE1F9CBCA7003D0FFC /* AddCoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCoreViewController.xib; sourceTree = "<group>"; };
+		336AABE31F9E6B4D003D0FFC /* TextInputControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextInputControl.xib; sourceTree = "<group>"; };
+		336AABE51F9E6B59003D0FFC /* TextInputControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputControl.swift; sourceTree = "<group>"; };
 		3398BA071F90FA8700428167 /* Squeak_Core_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Squeak_Core_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3398BA0B1F90FA8C00428167 /* Squeak_Core_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Squeak_Core_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33D0A58A1F8FDD0500DF080E /* Squeak-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Squeak-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,17 +215,63 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		333C83EF1F952DB500E9E189 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				336AABE21F9E6B2A003D0FFC /* Screens */,
+				336AABE11F9E6B1D003D0FFC /* Shared */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		333C83F01F952F2F00E9E189 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				336AABD91F969EA5003D0FFC /* WelcomeViewController.swift */,
+				336AABDA1F969EA5003D0FFC /* WelcomeViewController.xib */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		333C83F11F952F3400E9E189 /* AddCore */ = {
+			isa = PBXGroup;
+			children = (
+				336AABDE1F9CBCA7003D0FFC /* AddCoreViewController.xib */,
+				336AABDD1F9CBCA7003D0FFC /* AddCoreViewController.swift */,
+			);
+			path = AddCore;
+			sourceTree = "<group>";
+		};
+		336AABE11F9E6B1D003D0FFC /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				336AABE51F9E6B59003D0FFC /* TextInputControl.swift */,
+				336AABE31F9E6B4D003D0FFC /* TextInputControl.xib */,
+				332332581F9E74000028A4DF /* Nibbler.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		336AABE21F9E6B2A003D0FFC /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				333C83F11F952F3400E9E189 /* AddCore */,
+				333C83F01F952F2F00E9E189 /* Welcome */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		33D0A57F1F8FDCDE00DF080E = {
 			isa = PBXGroup;
 			children = (
-				3398BA0B1F90FA8C00428167 /* Squeak_Core_macOS.framework */,
-				3398BA071F90FA8700428167 /* Squeak_Core_iOS.framework */,
 				33D0A58C1F8FDD0500DF080E /* Squeak-iOS */,
 				33D0A5A11F8FDD0500DF080E /* Squeak-iOSTests */,
 				33D0A5AC1F8FDD0500DF080E /* Squeak-iOSUITests */,
 				33D0A5BE1F8FDD1800DF080E /* Squeak-macOS */,
 				33D0A5D11F8FDD1800DF080E /* Squeak-macOSTests */,
 				33D0A5DC1F8FDD1800DF080E /* Squeak-macOSUITests */,
+				3398BA0B1F90FA8C00428167 /* Squeak_Core_macOS.framework */,
+				3398BA071F90FA8700428167 /* Squeak_Core_iOS.framework */,
 				33D0A58B1F8FDD0500DF080E /* Products */,
 				33D0A6071F8FDD9300DF080E /* Frameworks */,
 				321C0EF9D93B40EEBBC4030B /* Pods */,
@@ -235,6 +295,7 @@
 		33D0A58C1F8FDD0500DF080E /* Squeak-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				333C83EF1F952DB500E9E189 /* UI */,
 				33D0A58D1F8FDD0500DF080E /* AppDelegate.swift */,
 				33D0A58F1F8FDD0500DF080E /* ViewController.swift */,
 				33D0A5911F8FDD0500DF080E /* Main.storyboard */,
@@ -516,9 +577,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				336AABE01F9CBCA7003D0FFC /* AddCoreViewController.xib in Resources */,
 				33D0A5981F8FDD0500DF080E /* LaunchScreen.storyboard in Resources */,
+				336AABDC1F969EA5003D0FFC /* WelcomeViewController.xib in Resources */,
 				33D0A5951F8FDD0500DF080E /* Assets.xcassets in Resources */,
 				33D0A5931F8FDD0500DF080E /* Main.storyboard in Resources */,
+				336AABE41F9E6B4D003D0FFC /* TextInputControl.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -778,8 +842,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				336AABDB1F969EA5003D0FFC /* WelcomeViewController.swift in Sources */,
 				33D0A5901F8FDD0500DF080E /* ViewController.swift in Sources */,
 				33D0A58E1F8FDD0500DF080E /* AppDelegate.swift in Sources */,
+				336AABDF1F9CBCA7003D0FFC /* AddCoreViewController.swift in Sources */,
+				332332591F9E74000028A4DF /* Nibbler.swift in Sources */,
+				336AABE61F9E6B59003D0FFC /* TextInputControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

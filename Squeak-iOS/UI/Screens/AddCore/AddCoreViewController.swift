@@ -78,7 +78,6 @@ class AddCoreViewController: UIViewController {
             .disposed(by: disposeBag)
         
         networkResult
-            .delay(0.6, scheduler: MainScheduler.instance)
             .subscribe(onNext: { result in
                 switch result {
                 case .Success(_):
@@ -90,8 +89,9 @@ class AddCoreViewController: UIViewController {
                     UIView.animate(withDuration: 0.1, animations: {
                         hud.textLabel.text = "Failed"
                         hud.indicatorView = JGProgressHUDErrorIndicatorView()
-                        hud.dismiss(afterDelay: 1.0)
                     })
+                    
+                    hud.dismiss(afterDelay: 1.0)
                 }
             })
             .disposed(by: disposeBag)

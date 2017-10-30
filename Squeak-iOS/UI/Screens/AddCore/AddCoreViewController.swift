@@ -52,6 +52,8 @@ class AddCoreViewController: UIViewController {
         hud.parallaxMode = .alwaysOff
         
         submitFormInput.subscribe(onNext: { [unowned self] _ in
+                self.view.endEditing(true)
+            
                 hud.textLabel.text = "Connecting"
                 hud.indicatorView = JGProgressHUDIndeterminateIndicatorView()
                 hud.show(in: self.view)
@@ -76,7 +78,7 @@ class AddCoreViewController: UIViewController {
             .disposed(by: disposeBag)
         
         networkResult
-            .delay(1.5, scheduler: MainScheduler.instance)
+            .delay(0.6, scheduler: MainScheduler.instance)
             .subscribe(onNext: { result in
                 switch result {
                 case .Success(_):
@@ -88,10 +90,9 @@ class AddCoreViewController: UIViewController {
                     UIView.animate(withDuration: 0.1, animations: {
                         hud.textLabel.text = "Failed"
                         hud.indicatorView = JGProgressHUDErrorIndicatorView()
+                        hud.dismiss(afterDelay: 1.0)
                     })
                 }
-                
-                hud.dismiss(afterDelay: 1.0)
             })
             .disposed(by: disposeBag)
     }

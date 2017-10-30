@@ -14,20 +14,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "33CD414E1F90ED9000EF00B4"
-               BuildableName = "Squeak_Core_iOS.framework"
-               BlueprintName = "Squeak-Core-iOS"
-               ReferencedContainer = "container:Squeak-Core/Squeak-Core.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "33CD41561F90ED9000EF00B4"
                BuildableName = "Squeak-Core-iOSTests.xctest"
                BlueprintName = "Squeak-Core-iOSTests"
@@ -48,6 +34,20 @@
                ReferencedContainer = "container:Squeak.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "33CD414E1F90ED9000EF00B4"
+               BuildableName = "Squeak_Core_iOS.framework"
+               BlueprintName = "Squeak-Core-iOS"
+               ReferencedContainer = "container:Squeak-Core/Squeak-Core.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -61,10 +61,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "33D0A59D1F8FDD0500DF080E"
-               BuildableName = "Squeak-iOSTests.xctest"
-               BlueprintName = "Squeak-iOSTests"
-               ReferencedContainer = "container:Squeak.xcodeproj">
+               BlueprintIdentifier = "33CD41561F90ED9000EF00B4"
+               BuildableName = "Squeak-Core-iOSTests.xctest"
+               BlueprintName = "Squeak-Core-iOSTests"
+               ReferencedContainer = "container:Squeak-Core/Squeak-Core.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference

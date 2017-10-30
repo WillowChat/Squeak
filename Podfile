@@ -19,10 +19,20 @@ def rxswift_pods
   pod 'RxCocoa', '~> 4.0.0-rc.0'
 end
 
+def xml_pods
+  pod 'SWXMLHash', '~> 4.2.3'
+end
+
+def ios_pods
+  rxswift_pods
+  xml_pods
+  pod 'JGProgressHUD', '~> 2.0'
+end
+
 target 'Squeak-iOS' do
   ios_platform
 
-  rxswift_pods
+  ios_pods
 
   target 'Squeak-iOSTests' do
     inherit! :search_paths
@@ -44,7 +54,7 @@ target 'Squeak-Core-iOS' do
 
   project 'Squeak-Core/Squeak-Core.xcodeproj'
 
-  rxswift_pods
+  ios_pods
 
   target 'Squeak-Core-iOSTests' do
     inherit! :search_paths
@@ -57,6 +67,7 @@ target 'Squeak-Core-macOS' do
   project 'Squeak-Core/Squeak-Core.xcodeproj'
 
   rxswift_pods
+  xml_pods
 
   target 'Squeak-Core-macOSTests' do
     inherit! :search_paths

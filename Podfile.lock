@@ -1,16 +1,22 @@
 PODS:
+  - JGProgressHUD (2.0)
   - RxCocoa (4.0.0-rc.0):
     - RxSwift (~> 4.0.0-rc.0)
   - RxSwift (4.0.0-rc.0)
+  - SWXMLHash (4.2.3)
 
 DEPENDENCIES:
+  - JGProgressHUD (~> 2.0)
   - RxCocoa (~> 4.0.0-rc.0)
   - RxSwift (~> 4.0.0-rc.0)
+  - SWXMLHash (~> 4.2.3)
 
 SPEC CHECKSUMS:
+  JGProgressHUD: c402c0f41fc291ca7e33bba2f999118d9682dd9c
   RxCocoa: 62457355be73369670fbdf053a79a491552b64ed
   RxSwift: 1dd09ceb11531c39adff4efe23556b1484e16967
+  SWXMLHash: 6ab10e1cb4567d88cd3634be0bf331a7839945dd
 
-PODFILE CHECKSUM: adf492ef26f0b7708cd4c2ac5a6cb21a327db9a0
+PODFILE CHECKSUM: 52ba34b190c36e567a0b978abe5edb57ea5b227a
 
 COCOAPODS: 1.4.0.beta.1

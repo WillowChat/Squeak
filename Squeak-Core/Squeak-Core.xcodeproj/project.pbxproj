@@ -7,10 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		330B97031FA66BF1009AD771 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330B96FB1FA66BF0009AD771 /* Result.swift */; };
+		330B97051FA66BF1009AD771 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330B96FB1FA66BF0009AD771 /* Result.swift */; };
+		330B97071FA66BF1009AD771 /* AuthUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330B96FC1FA66BF0009AD771 /* AuthUseCase.swift */; };
+		330B97091FA66BF1009AD771 /* AuthUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330B96FC1FA66BF0009AD771 /* AuthUseCase.swift */; };
+		330B970B1FA66BF1009AD771 /* ResourceDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330B96FE1FA66BF1009AD771 /* ResourceDescriptor.swift */; };
+		330B970D1FA66BF1009AD771 /* ResourceDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330B96FE1FA66BF1009AD771 /* ResourceDescriptor.swift */; };
+		330B970F1FA66BF1009AD771 /* XMLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330B96FF1FA66BF1009AD771 /* XMLExtensions.swift */; };
+		330B97111FA66BF1009AD771 /* XMLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330B96FF1FA66BF1009AD771 /* XMLExtensions.swift */; };
+		330B97131FA66BF1009AD771 /* NetworkProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330B97001FA66BF1009AD771 /* NetworkProviding.swift */; };
+		330B97151FA66BF1009AD771 /* NetworkProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330B97001FA66BF1009AD771 /* NetworkProviding.swift */; };
+		330B97171FA66BF1009AD771 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330B97011FA66BF1009AD771 /* NetworkProvider.swift */; };
+		330B97191FA66BF1009AD771 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330B97011FA66BF1009AD771 /* NetworkProvider.swift */; };
+		330B971B1FA66BF1009AD771 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330B97021FA66BF1009AD771 /* URLSessionProtocol.swift */; };
+		330B971D1FA66BF1009AD771 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330B97021FA66BF1009AD771 /* URLSessionProtocol.swift */; };
 		335AE2E51F90EE8100AE3C05 /* TestingSharedStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335AE2E41F90EE8100AE3C05 /* TestingSharedStuff.swift */; };
-		335AE2E61F90EE8100AE3C05 /* TestingSharedStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335AE2E41F90EE8100AE3C05 /* TestingSharedStuff.swift */; };
 		335AE2E71F90EE8100AE3C05 /* TestingSharedStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335AE2E41F90EE8100AE3C05 /* TestingSharedStuff.swift */; };
-		335AE2E81F90EE8100AE3C05 /* TestingSharedStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335AE2E41F90EE8100AE3C05 /* TestingSharedStuff.swift */; };
 		335AE2EA1F90EEB400AE3C05 /* TestingSharedStuffTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335AE2E91F90EEB400AE3C05 /* TestingSharedStuffTests.swift */; };
 		335AE2EB1F90EEB400AE3C05 /* TestingSharedStuffTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335AE2E91F90EEB400AE3C05 /* TestingSharedStuffTests.swift */; };
 		33CD41581F90ED9000EF00B4 /* Squeak_Core_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33CD414F1F90ED9000EF00B4 /* Squeak_Core_iOS.framework */; };
@@ -47,6 +59,13 @@
 		06AB0DB151B72E0C72628916 /* Pods_Squeak_Core_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Squeak_Core_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC30A6E3A03AD6FEABB9CB4 /* Pods-Squeak-Squeak-Core-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squeak-Squeak-Core-macOS.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Squeak-Squeak-Core-macOS/Pods-Squeak-Squeak-Core-macOS.debug.xcconfig"; sourceTree = "<group>"; };
 		2B2D1462FA7263BAF2DDFC58 /* Pods-Squeak-Core-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squeak-Core-macOS.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Squeak-Core-macOS/Pods-Squeak-Core-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		330B96FB1FA66BF0009AD771 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		330B96FC1FA66BF0009AD771 /* AuthUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthUseCase.swift; sourceTree = "<group>"; };
+		330B96FE1FA66BF1009AD771 /* ResourceDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceDescriptor.swift; sourceTree = "<group>"; };
+		330B96FF1FA66BF1009AD771 /* XMLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLExtensions.swift; sourceTree = "<group>"; };
+		330B97001FA66BF1009AD771 /* NetworkProviding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProviding.swift; sourceTree = "<group>"; };
+		330B97011FA66BF1009AD771 /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		330B97021FA66BF1009AD771 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 		335AE2E41F90EE8100AE3C05 /* TestingSharedStuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingSharedStuff.swift; sourceTree = "<group>"; };
 		335AE2E91F90EEB400AE3C05 /* TestingSharedStuffTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingSharedStuffTests.swift; sourceTree = "<group>"; };
 		33CD414F1F90ED9000EF00B4 /* Squeak_Core_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Squeak_Core_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,9 +134,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		330B96FD1FA66BF1009AD771 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				330B96FE1FA66BF1009AD771 /* ResourceDescriptor.swift */,
+				330B96FF1FA66BF1009AD771 /* XMLExtensions.swift */,
+				330B97001FA66BF1009AD771 /* NetworkProviding.swift */,
+				330B97011FA66BF1009AD771 /* NetworkProvider.swift */,
+				330B97021FA66BF1009AD771 /* URLSessionProtocol.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		335AE2E21F90EE5E00AE3C05 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				330B96FD1FA66BF1009AD771 /* Network */,
+				330B96FC1FA66BF0009AD771 /* AuthUseCase.swift */,
+				330B96FB1FA66BF0009AD771 /* Result.swift */,
 				335AE2E41F90EE8100AE3C05 /* TestingSharedStuff.swift */,
 			);
 			path = Sources;
@@ -486,11 +520,13 @@
 				"${SRCROOT}/../Pods/Target Support Files/Pods-Squeak-Core-macOSTests/Pods-Squeak-Core-macOSTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa-macOS/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift-macOS/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SWXMLHash-macOS/SWXMLHash.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -504,13 +540,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/../Pods/Target Support Files/Pods-Squeak-Core-iOSTests/Pods-Squeak-Core-iOSTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa-iOS/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift-iOS/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SWXMLHash-iOS/SWXMLHash.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -590,6 +630,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				330B97171FA66BF1009AD771 /* NetworkProvider.swift in Sources */,
+				330B97031FA66BF1009AD771 /* Result.swift in Sources */,
+				330B97071FA66BF1009AD771 /* AuthUseCase.swift in Sources */,
+				330B970B1FA66BF1009AD771 /* ResourceDescriptor.swift in Sources */,
+				330B971B1FA66BF1009AD771 /* URLSessionProtocol.swift in Sources */,
+				330B97131FA66BF1009AD771 /* NetworkProviding.swift in Sources */,
+				330B970F1FA66BF1009AD771 /* XMLExtensions.swift in Sources */,
 				335AE2E51F90EE8100AE3C05 /* TestingSharedStuff.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -598,7 +645,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				335AE2E61F90EE8100AE3C05 /* TestingSharedStuff.swift in Sources */,
 				33CD415D1F90ED9000EF00B4 /* Squeak_Core_iOSTests.swift in Sources */,
 				335AE2EA1F90EEB400AE3C05 /* TestingSharedStuffTests.swift in Sources */,
 			);
@@ -608,6 +654,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				330B97191FA66BF1009AD771 /* NetworkProvider.swift in Sources */,
+				330B97051FA66BF1009AD771 /* Result.swift in Sources */,
+				330B97091FA66BF1009AD771 /* AuthUseCase.swift in Sources */,
+				330B970D1FA66BF1009AD771 /* ResourceDescriptor.swift in Sources */,
+				330B971D1FA66BF1009AD771 /* URLSessionProtocol.swift in Sources */,
+				330B97151FA66BF1009AD771 /* NetworkProviding.swift in Sources */,
+				330B97111FA66BF1009AD771 /* XMLExtensions.swift in Sources */,
 				335AE2E71F90EE8100AE3C05 /* TestingSharedStuff.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -616,7 +669,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				335AE2E81F90EE8100AE3C05 /* TestingSharedStuff.swift in Sources */,
 				33CD41791F90EDA700EF00B4 /* Squeak_Core_macOSTests.swift in Sources */,
 				335AE2EB1F90EEB400AE3C05 /* TestingSharedStuffTests.swift in Sources */,
 			);

@@ -1,4 +1,6 @@
 import UIKit
+import RxSwift
+import RxCocoa
 
 @IBDesignable
 class TextInputControl: UIView, ContentViewLoadable {
@@ -7,6 +9,10 @@ class TextInputControl: UIView, ContentViewLoadable {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var separatorView: UIView!
     @IBOutlet weak var helperLabel: UILabel!
+    
+    let textInput = BehaviorSubject<String?>(value: nil)
+    
+    private let disposeBag = DisposeBag()
     
     @IBInspectable var headerText: String? {
         get {
@@ -46,7 +52,7 @@ class TextInputControl: UIView, ContentViewLoadable {
     }
     
     func contentViewDidLoad() {
-        print("loaded text input control")
+        textField.rx.text.bind(to: textInput).disposed(by: disposeBag)
     }
     
 }
